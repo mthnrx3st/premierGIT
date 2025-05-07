@@ -1,0 +1,216 @@
+body {
+  background-image: url("pictures/bg.jpg"); 
+  background-image: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: rgb(41, 39, 39);
+  padding: 20px;
+  border-radius: 1500px;
+  justify-content: center;
+
+}
+ 
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.end {
+  justify-content: center; 
+    width: 1150px; 
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.box {
+  width: 1150px;
+  height: 100px;
+  justify-content: center;
+  }
+ 
+/*  LIGNE 1  */
+
+/* CARRE ORANGE DE GAUCHE */
+
+.carreOrange {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 104, 4);
+  border: 2px solid black;
+  border-radius: 15%;
+  transition: all 0.5s ease;
+ }
+
+ .carreOrange:hover{
+ background-color: rgb(96, 39, 39);
+  border-radius: 50%;
+ }
+
+ /* CARRE BLEU DU MILIEU LIGNE 1 */
+
+ .cercleBleu {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 50%; 
+  transition: all 0.5s ease;
+}
+
+.cercleBleu:hover {
+  background-color: rgb(0, 255, 255);
+  transform: scale(1.2);
+}
+
+/* CARRE VERT DE DROITE LIGNE 1 */
+
+.carreVert {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(7, 255, 53);
+  border: 2px solid black;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+ }
+
+ .carreVert:hover {
+  background-color: rgb(236, 236, 29);
+  transform: scale(1.2);
+ }
+
+/* LIGNE 2 */
+
+.form {
+  display: flex;
+  background-color: rgb(41, 39, 39);
+  color: rgb(100, 77, 77);
+  margin-top: 10px;
+  width: 1150px;
+  height: 100px;
+  border-radius: 1500px;
+  align-items: center;  
+ }
+
+ /* BARRE ORANGE GAUCHE LIGNE 2 */
+
+.cercleJaune {
+  width: 20px;
+  height: 80px;
+  background-color: rgba(255, 68, 0, 0.995);
+  border: 1px solid black;
+  border: 50%;
+  animation: tourner 2s linear infinite; 
+ }
+
+ @keyframes tourner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*  CARRE VIOLET DU MILIEU LIGNE 2 */
+
+.carreViolet {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(133, 22, 126, 0.995);
+  border: 1px solid black;
+  border-radius: 15px;
+  animation: tourner 01s linear infinite; 
+}
+
+/* BARRE ORANGE DE DROITE SENS INVERSE LIGNE 2 */
+
+.cercleOrange {
+  width: 10px;
+  height: 50px;
+  background-color: rgba(249, 81, 25, 0.995);
+  border: 1px solid black;
+  animation: tourner 01s linear infinite; 
+}
+
+@keyframes tourner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+ /* LIGNE 3 */
+
+ /* CARRE ORANGE GAUCHE LIGNE 3  */
+
+ .cercleRouge {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(245, 54, 20, 0.995);
+  border: 1px solid black;
+  animation: allerRetour 2s ease-in-out infinite alternate;
+  transform: translateX(-60px);
+}
+
+@keyframes allerRetour {
+  from {
+    transform: translateX(-15px); 
+  }
+  to {
+    transform: translateX(15px);  
+  }
+}
+ 
+/* CERCLE GRIS DE HAUT EN BAS LIGNE 3 */
+
+.carreGris {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(113, 108, 111, 0.995);
+  border: 1px solid black;
+  border-radius: 50%;
+  animation: allerRetourY 2s ease-in-out infinite alternate;
+}
+
+@keyframes allerRetourY {
+  from {
+    transform: translateY(10px);   
+  }
+  to {
+    transform: translateY(0);    
+  }
+}
+
+/* CARRE ORANGE DROITE DE DROITE A GAUCHE */
+
+.cerclePeche {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(237, 79, 11, 0.995);
+  border: 1px solid black;
+  animation: allerRetourX  1.5s ease-in-out infinite alternate;
+}
+
+@keyframes allerRetourX {
+    from {
+      transform: translateX(-10px);   
+    }
+    to {
+      transform: translateX(10px);    
+    }
+  }
+
+  
+  

@@ -1,0 +1,149 @@
+
+.boxBody {
+    width: 1920px;
+    height: 720px;
+}
+
+/* PARTIE 1 EN-TETE */
+
+.header {
+    padding: 20px;  
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    background-color: #280e68;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* reseaux */
+
+.box-reseaux {
+    font-size: 42px;
+}
+
+.logiciels {
+     text-align: center;
+}
+
+/* RESEAUX SOCIAUX */
+
+.box-reseaux {
+    padding: 100px;
+}
+
+.gobalSocial {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.reseaux-sociaux {
+    gap: 15px;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.reseaux-sociaux img {
+    width: 70px;
+    height: 70px;
+  }
+ 
+/* PARTIE 3 */
+
+.container-skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #bd41d0;
+    transition: background-color 0.6s ease;
+  }
+  
+  .container-skills:hover {
+    background-color: #9a4ce8;
+    } 
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.diplomes1 {
+     text-align: center;
+     font-size: 32px;
+     color: rgb(0, 0, 0);
+}
+
+.xp1 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+}
+
+.formations1 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+
+}
+
+.diplomes-box {
+    background-color: #280e68;
+    color: rgb(247, 246, 246);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.xp {
+    background-color: #280e68;
+    color: white;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.formations-box {
+    background-color: #280e68;
+    color: white;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: left;
+}
+
+button {
+    background-color: #280e68;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+/* profil */
+
+.box-profile {
+    background-color: #280e68;
+    color: white;
+    margin: 70px;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.profile  {
+    font-size: 32px;
+}
+
+ /* PIED DE PAGE */
+
+footer {
+    padding: 30px;
+    font-size: 32px;
+    color: #280e68;
+    text-align: center;
+}

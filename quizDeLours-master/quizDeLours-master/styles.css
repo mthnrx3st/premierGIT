@@ -1,0 +1,175 @@
+/* CSS externe */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-image: url('OIG3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Impact', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.color{
+  background-color: bisque;
+}
+.flex{
+  display: flex;
+}
+
+#question-container {
+  margin-bottom: 20px;
+  font-size: 2em;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+#answer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 2em;
+}
+
+button {
+  padding: 20px;
+  margin: 5px;
+  font-size: 24px;
+  color: #fff;
+  border: solid 3px whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#next-btn, #show-answer-btn, #square-btn, #add-participant-btn, .add-point-btn, .subtract-point-btn {
+  padding: 20px;
+  margin: 5px;
+  font-size: 24px;
+  color: #fff;
+  border: solid 3px whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#next-btn:hover, #show-answer-btn:hover, #square-btn:hover, #add-participant-btn:hover, .add-point-btn:hover, .subtract-point-btn:hover {
+  background-color: #0056b3;
+}
+
+.correct {
+  color: rgb(27, 201, 27);
+  font-size: 54px !important; 
+}
+
+.incorrect {
+  color: red;
+  font-size: 34px !important;
+}
+
+#participants  {
+  padding: 20px;
+  margin: 5px;
+  font-size: 24px;
+}
+
+#score-table {
+  width: 90%;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+#score-table th, #score-table td {
+  padding: 20px;
+  font-size: 24px;
+}
+
+#score-table button {
+  padding: 5px 5px;
+  margin: 5px;
+  font-size: 18px;
+}
+/* Adaptation pour les écrans de smartphone */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #participants  {
+    display: none;
+    }
+  h1 {
+    font-size: 24px;
+  }
+
+  #question-container {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+
+  #answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-size: 1.5em;
+  }
+
+  button {
+    padding: 15px;
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  #next-btn,
+  #show-answer-btn,
+  #square-btn {
+    padding: 15px;
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  #score-table {
+    display: none; /* Pour masquer le tableau sur les écrans de smartphone */
+  }
+}
